@@ -77,6 +77,22 @@ Same as Scheduler Selector but for samplers, sourced from `comfy.samplers.KSampl
 
 ---
 
+### Text Split
+Splits a multiline string into a list, one element per line.
+
+**Input:** `text` (STRING, multiline), `skip_empty_lines` (BOOLEAN, default: true)
+**Output:** `list` (STRING_LIST)
+
+---
+
+### List Get Index
+Returns a single element from a `STRING_LIST` by index. Supports negative indices (`-1` = last element).
+
+**Input:** `list` (STRING_LIST), `index` (INT)
+**Output:** `element` (STRING)
+
+---
+
 ## Installation
 
 1. Clone or copy this folder into `ComfyUI/custom_nodes/`:
